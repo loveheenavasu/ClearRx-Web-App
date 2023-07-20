@@ -1,0 +1,8 @@
+.mobile-number-error {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}

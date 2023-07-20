@@ -1,0 +1,23 @@
+.label {
+  color: #19104e;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sub-label {
+  color: #19104e;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.label-star {
+  color: #fd3519;
+}
+.form-input-value {
+  color: grey;
+  background-color: green;
+  font-size: 14px;
+  padding: 13px 20px;
+}

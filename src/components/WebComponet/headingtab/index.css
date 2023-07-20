@@ -1,0 +1,45 @@
+.heading-tab {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.heading-tab-para {
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7877a0;
+}
+.tab-line {
+  display: inline-block;
+  width: 118px;
+  border: 2px solid #076ad2;
+  border-radius: 10px;
+}
+.mobile-number-error {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.back-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #eceef3;
+  border-radius: 50%;
+}
+.cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #faefef;
+  border-radius: 50%;
+  margin-left: 16px;
+}

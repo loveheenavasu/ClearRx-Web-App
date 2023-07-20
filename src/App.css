@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+/* Font Classes */
+.fs-9 {
+  font-size: 0.5rem;
+}
+.fs-11 {
+  font-size: 0.6875rem;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-36 {
+  font-size: 2.25rem !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+fs-14 {
+  font-size: 14px;
+}
+fs-16 {
+  font-size: 16px;
+}
+fs-11 {
+  font-size: 11px;
+}
+fs-11 {
+  font-size: 11px;
+}
+fs-11 {
+  font-size: 11px;
+}
+fs-11 {
+  font-size: 11px;
+}
+.fs-26 {
+  font-size: 1.625rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+fw-400 {
+  font-weight: 400;
+}
+fw-500 {
+  font-weight: 500;
+}
+fw-600 {
+  font-weight: 600;
+}
+fw-700 {
+  font-weight: 700;
+}
+fw-800 {
+  font-weight: 800;
+}
+/* custom margin classes */
+mt-11 {
+  margin-top: 11px;
+}
+.mt-15 {
+  margin-top: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mx-32 {
+  margin: 2rem 0px;
 }
-
-.App-link {
-  color: #61dafb;
+.mt-12 {
+  margin-top: 0.8rem;
 }
+.mt-20 {
+  margin-top: 1.3rem;
+}
+.mt-24{
+  margin-top:1.5em
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.mb-12 {
+  margin-bottom: 0.8rem;
+}
+.mt-32 {
+  margin-top: 2rem;
+}
+.mt-30 {
+  margin-top: 1.87rem !important;
+}
+.mt-36 {
+  margin-top: 2.25rem !important;
+}
+.mb-60 {
+  margin-bottom: 3.7rem;
+}
+.mt-80 {
+  margin-top: 5rem;
+}
+.mb-100 {
+  margin-bottom: 10.25rem;
+}
+.mb-14 {
+  margin-bottom: 0.875rem;
+}
+/* colors */
+
+.grey {
+  color: #7877a0;
+}
+.lightgray{
+color:#999999}
+.darkblue {
+  color: #19104e;
+}
+.blue {
+  color: #0669cd;
+}
+.bg {
+  background-color: gray;
+}
+/* paddgin */
+.p-16 {
+  padding: 16px;
+}
+.p-0 {
+  padding: 0px;
+}
+.p-16 {
+  padding: 1rem;
+}
+.bg-white {
+  background-color: white;
+}
+.px-124 {
+  padding: 0px 7.75rem;
 }

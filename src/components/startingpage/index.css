@@ -1,0 +1,12 @@
+.parent-container {
+  height: 100vh;
+}
+.starting-page-para {
+  color: #0669cd;
+  text-align: center;
+  font-family: EB Garamond;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
