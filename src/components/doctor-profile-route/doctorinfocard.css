@@ -1,0 +1,14 @@
+.doctor-info-card {
+  padding: 27px 20px;
+  display: flex;
+  background-color: #3db8ed !important;
+  border: none !important;
+}
+.card {
+  flex-direction: row !important;
+}
+.doctor-detail {
+  display: flex;
+  flex-direction: column !important;
+  margin-left: 1.125rem;
+}

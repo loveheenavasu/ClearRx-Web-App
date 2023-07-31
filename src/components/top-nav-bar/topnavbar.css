@@ -1,0 +1,15 @@
+.top-nav-bar-parent {
+  width: 100%;
+  background-color: rgb(61, 184, 237);
+}
+.top-nav-bar {
+  width: 86%;
+  margin: auto;
+  background-color: rgb(61, 184, 237);
+}
+.top-nav-bar span {
+  padding: 13px 0px;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}

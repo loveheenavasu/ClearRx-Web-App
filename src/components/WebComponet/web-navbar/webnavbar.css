@@ -1,0 +1,30 @@
+.health-care {
+  color: #0669cd;
+  text-align: center;
+  font-family: EB Garamond;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+}
+.navbar-center li {
+  cursor: pointer;
+}
+.nav-menu {
+  position: relative;
+}
+
+
+.nav-menu:hover::after,
+.nav-menu.active::after {
+  margin: 0 auto;
+  content: "";
+  display: block;
+  width: 13px;
+  height: 4px;
+  background: #3db8ed;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}

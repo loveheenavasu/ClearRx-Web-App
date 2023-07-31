@@ -4,13 +4,12 @@ import Container from "react-bootstrap/Container";
 export default function VideoOpt() {
   return (
     <Container>
-      <video width="100%" height="298px" controls="" className="video">
+      {/* <video width="100%" height="298px" controls="" className="video">
         <source
-          src="https://player.vimeo.com/external/389786356.sd.mp4?s=70803fc04d762b45e6363df77c2480a26dc394c5&profile_id=165&oauth2_token_id=57447761"
+          src="https://d360zdw5tkn3j9.cloudfront.net/Template_Block_Assets/Template_sample_clips/one_click_preview/production/Motivational_Friendship_Quote_Video_Youtube_Shorts_Template_production_story_26501_9_16_1690372947545_SD5.mp4"
           type="video/mp4"
         />
-        asdfasdfdsfds
-      </video>
+      </video> */}
     </Container>
   );
 }

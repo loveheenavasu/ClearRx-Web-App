@@ -1,4 +1,5 @@
-import StartingPage from "components/startingpage/StartingPage";
+import Mobileheader from "components/mobile-components/mobile-header/Mobileheader";
+import StartingPage from "components/starting-page/StartingPage";
 
 import React from "react";
 

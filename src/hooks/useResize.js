@@ -8,7 +8,7 @@ const useIsmobile = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   });
-  return state < 763;
+  return state < 576;
 };
 
 export default useIsmobile;

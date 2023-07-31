@@ -1,0 +1,20 @@
+.fixed-tab {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  background: "white";
+}
+.mobiletabhover {
+  border-radius: 12px;
+  font-weight: 700;
+}
+.mobiletabhover12 {
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+}
+.mobiletabhover12:hover {
+  background-color: #c5eafa;
+  color: #3db8ed;
+}

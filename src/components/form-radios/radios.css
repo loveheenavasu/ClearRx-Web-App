@@ -1,0 +1,18 @@
+.formRadios {
+  display: flex;
+  align-items: center;
+}
+.formRadios input {
+  border: 2px solid #3db8ed;
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+  /* background-color: #3db8ed; */
+  padding: 2px;
+}
+
+.formRadios label {
+  font-size: 16px;
+  color: #999999;
+  font-weight: 400;
+}

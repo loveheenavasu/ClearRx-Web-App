@@ -1,8 +1,6 @@
-import Otp from "pages/mobile/onboarding/Otp";
-import Register from "pages/mobile/onboarding/Register";
 import "./App.css";
 import "./index.css";
-import ConfirmOtp from "pages/mobile/onboarding/ConfirmOtp";
+import "react-toastify/dist/ReactToastify.css";
 
 import {
   createBrowserRouter,
@@ -11,97 +9,66 @@ import {
   // Link,
   createRoutesFromElements,
   // Router,
-  Outlet,
+  RouterProvider,
+  Navigate,
 } from "react-router-dom";
-import Welcome from "pages/mobile/onboarding/Welcome";
-// import Headingtab from "components/WebComponet/headingtab/Headingtab";
-// import WebRegister from "pages/web/onboarding/Register";
 import useIsmobile from "./hooks/useResize";
-import Thankyou from "pages/mobile/onboarding/Thankyou";
-import WebThanks from "pages/web/onboarding/WebThanks";
-import WebConfirmOtp from "pages/web/onboarding/WebConfirmOtp";
-import WebRegister from "pages/web/onboarding/WebRegister";
-import WebOtp from "pages/web/onboarding/WebOtp";
-
-const mobileRoutes = {
-  register: <Register />,
-  confirmotp: <ConfirmOtp />,
-  welcome: <Welcome />,
-  thanks: <Thankyou />,
-  otp: <Otp />,
-};
-
-const webRoutes = {
-  register: <WebRegister />,
-  confirmotp: <WebConfirmOtp />,
-  welcome: <Welcome />,
-  thanks: <WebThanks />,
-  otp: <WebOtp />,
-};
+import { webRoutes } from "utils/webRoutes";
+import { mobileRoutes } from "utils/mobileRoutes";
+import PrivateRoute from "routes/PrivateRoute";
+import Verify from "components/verify-account/Verify";
 
 function WebOrMobile({ component }) {
   const isMobile = useIsmobile();
-  console.log("helosodfasdohfdsajfdjs", isMobile);
   return isMobile ? mobileRoutes[component] : webRoutes[component];
 }
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route
-      path="/"
-      element={
-        <>
-          <Outlet />
-        </>
-      }
-    >
-      <Route
-        path="/confirm-otp"
-        element={<WebOrMobile component="confirmotp" />}
-      ></Route>
-      <Route
-        path="/register"
-        element={<WebOrMobile component="register" />}
-      ></Route>
-      <Route
-        path="/welcome"
-        element={<WebOrMobile component="welcome" />}
-      ></Route>
-      <Route
-        path="/thanks"
-        element={<WebOrMobile component="thanks" />}
-      ></Route>
-      <Route path="/otp" element={<WebOrMobile component="otp" />}></Route>
-    </Route>
-  )
-);
-
-function App() {
-  return (
     <>
-      <Route
-        path="/"
-        element={
-          <>
-            <Outlet />
-          </>
-        }
-      >
+      <Route path="/" element={<PrivateRoute />}>
+        <Route path="/home" element={<WebOrMobile component="home" />}></Route>
+        <Route path="/" element={<WebOrMobile component="home" />}></Route>
+
         <Route
-          path="/confirmotp"
-          element={<WebOrMobile component="" />}
+          path="/edit-profile"
+          element={<WebOrMobile component="editProfile" />}
         ></Route>
+        <Route
+          path="/new-rx"
+          element={<WebOrMobile component="newrx" />}
+        ></Route>
+      </Route>
+
+      <Route path="/">
+        <Route
+          path="/confirm-otp"
+          element={<WebOrMobile component="confirmOtp" />}
+        ></Route>
+        <Route path="/" element={<WebOrMobile component="otp" />}></Route>
         <Route
           path="/register"
           element={<WebOrMobile component="register" />}
         ></Route>
         <Route
           path="/welcome"
-          element={<WebOrMobile component="register" />}
+          element={<WebOrMobile component="welcome" />}
         ></Route>
+        <Route path="/login" element={<WebOrMobile component="otp" />}></Route>
+
+        <Route path="/verify" element={<Verify />} />
       </Route>
+      <Route path="*" element={<Navigate to="/home" />} />
+      <Route
+        path="/thanks"
+        element={<WebOrMobile component="thanks" />}
+      ></Route>
     </>
-  );
+  )
+);
+
+function App() {
+  return <RouterProvider router={router} />;
 }
 
 export default App;

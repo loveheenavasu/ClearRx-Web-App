@@ -1,0 +1,30 @@
+.health-care {
+  color: #0669cd;
+  text-align: center;
+  font-family: EB Garamond;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+}
+.footer-li {
+  flex-wrap: wrap;
+}
+.footer-li span {
+  list-style: none;
+}
+.quotes {
+  max-width: 369.58px;
+}
+.footer-li span h2 {
+  margin-bottom: 12px;
+}
+.footer-li span li {
+  font-size: 16px;
+  font-weight: 400px;
+  color: #545454;
+  margin-bottom: 12px;
+}
+.footer-email-input {
+  max-width: 325px;
+  color: #8e8e8e;
+}

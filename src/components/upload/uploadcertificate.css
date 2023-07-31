@@ -1,0 +1,45 @@
+.upload-certificate-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4;
+}
+.upload-certificate {
+  display: flex;
+  padding: 19px 45px;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  border: 1px dashed rgba(25, 16, 78, 0.1);
+}
+.upload {
+  display: flex;
+  padding: 14px;
+  justify-content: start;
+
+  border: 1px dashed rgba(25, 16, 78, 0.1);
+}
+.label {
+  font-size: 11px;
+}
+.icon {
+  background-color: #64cdfa;
+  margin-right: 14px;
+  padding: 4px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+.pdf-icon {
+  margin: 12px;
+  padding: 4px;
+  max-width: 50px !important;
+  flex-direction: column;
+  word-wrap: break-word;
+}
+
+.pdf-icon .upload-croos-icon {
+  position: relative;
+  bottom: 40px;
+  left: 36px;
+}

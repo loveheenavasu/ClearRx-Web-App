@@ -3,6 +3,15 @@
   padding: 0px;
   box-sizing: border-box;
 }
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
 body {
   margin: 0px;
   padding: 0px;
@@ -18,34 +27,28 @@ body {
   font-size: 12px;
 }
 .fs-18 {
-  font-size: 18px;
+  font-size: 1.125rem !important;
 }
 .fs-36 {
   font-size: 2.25rem !important;
 }
+.fs-32 {
+  font-size: 2rem !important;
+}
 
-fs-14 {
-  font-size: 14px;
+.fs-14 {
+  font-size: 0.875rem !important;
 }
-fs-16 {
-  font-size: 16px;
+.fs-16 {
+  font-size: 1rem !important;
 }
-fs-11 {
-  font-size: 11px;
-}
-fs-11 {
-  font-size: 11px;
-}
-fs-11 {
-  font-size: 11px;
-}
-fs-11 {
-  font-size: 11px;
-}
+
 .fs-26 {
   font-size: 1.625rem;
 }
-
+.fs-30 {
+  font-size: 1.87rem;
+}
 fw-400 {
   font-weight: 400;
 }
@@ -55,18 +58,19 @@ fw-500 {
 fw-600 {
   font-weight: 600;
 }
-fw-700 {
-  font-weight: 700;
+.fw-700 {
+  font-weight: 700 !important;
 }
 fw-800 {
   font-weight: 800;
 }
 /* custom margin classes */
-mt-11 {
-  margin-top: 11px;
+
+.m-20 {
+  margin: 1.3rem;
 }
 .mt-15 {
-  margin-top: 15px;
+  margin-top: 0.93rem;
 }
 
 .mx-32 {
@@ -78,9 +82,30 @@ mt-11 {
 .mt-20 {
   margin-top: 1.3rem;
 }
-.mt-24{
-  margin-top:1.5em
+.mt-24 {
+  margin-top: 1.5em;
+}
 
+.ml-12 {
+  margin-left: 0.8em;
+}
+.ml-6 {
+  margin-left: 0.4em;
+}
+.ml-16 {
+  margin-left: 1rem;
+}
+.ml-20 {
+  margin-left: 1.3rem;
+}
+.mr-24 {
+  margin-right: 1.5em;
+}
+.mr-16 {
+  margin-right: 1rem;
+}
+.mb-10 {
+  margin-bottom: 0.625rem;
 }
 .mb-12 {
   margin-bottom: 0.8rem;
@@ -88,8 +113,17 @@ mt-11 {
 .mt-32 {
   margin-top: 2rem;
 }
+.mt-9 {
+  margin-top: 0.5rem;
+}
 .mt-30 {
   margin-top: 1.87rem !important;
+}
+.mb-30 {
+  margin-bottom: 1.87rem !important;
+}
+.mb-20 {
+  margin-bottom: 1.25rem;
 }
 .mt-36 {
   margin-top: 2.25rem !important;
@@ -100,19 +134,32 @@ mt-11 {
 .mt-80 {
   margin-top: 5rem;
 }
+.mt-85 {
+  margin-top: 5.13rem;
+}
 .mb-100 {
   margin-bottom: 10.25rem;
 }
 .mb-14 {
   margin-bottom: 0.875rem;
 }
+.mt-50 {
+  margin-top: 3.15rem;
+}
+.mb-8 {
+  margin-bottom: 0.5rem;
+}
+.mx-34 {
+  margin: 2.12rem 0px;
+}
 /* colors */
 
 .grey {
   color: #7877a0;
 }
-.lightgray{
-color:#999999}
+.lightgray {
+  color: #999999 !important;
+}
 .darkblue {
   color: #19104e;
 }
@@ -124,7 +171,7 @@ color:#999999}
 }
 /* paddgin */
 .p-16 {
-  padding: 16px;
+  padding: 1rem;
 }
 .p-0 {
   padding: 0px;
@@ -132,9 +179,75 @@ color:#999999}
 .p-16 {
   padding: 1rem;
 }
+.p-34 {
+  padding: 2.12rem;
+}
 .bg-white {
   background-color: white;
 }
 .px-124 {
   padding: 0px 7.75rem;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.text-purple {
+  color: #19104e;
+}
+.border-0 {
+  border: 0px;
+}
+.list-style-none {
+  list-style: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.fs-10 {
+  font-size: 10px;
+}
+.fs-20 {
+  font-size: 1.25rem;
+}
+.br-0 {
+  border-radius: 0px !important;
+}
+.add-Members div {
+  display: flex;
+  justify-content: end;
+}
+.red {
+  color: red !important;
+}
+.text-blue {
+  color: #3db8ed;
+}
+.Register1 {
+  width: 50%;
+  height: 100%;
+}
+.Register2 {
+  width: 50%;
+  height: 100%;
+}
+.Registorform {
+  width: 84%;
+  margin: auto;
+}
+.otp-form {
+  width: 70%;
+  margin: auto;
+}
+.otp {
+  width: 74%;
+  margin: 37px auto;
 }
